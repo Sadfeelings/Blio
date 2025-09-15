@@ -2,6 +2,9 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from .serializer import Nacionalidad_Serializer,Autor_Serializer,Comuna_Serializer,Direccion_Serializer,Biblioteca_Serializer,Lector_Serializer,Libro_Serializer,Prestamo_Serializer,Genero_Serializer
 from .models import Nacionalidad,Autor,Comuna,Direccion,Biblioteca,Lector,Libro,Prestamo,Genero
+
+def pagina_inicio(request):
+    return render(request, 'biblioteca/inicio.html')
 # Create your views here.
 class Nacionalidad_ViewSet(viewsets.ModelViewSet):
 # acá creamos una QUERY a nuestra tabla, trayendo todos los campos como un objeto.
