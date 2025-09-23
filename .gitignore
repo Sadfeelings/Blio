@@ -1,5 +1,5 @@
 Dev 
-.vs
+.vscode
 biblioteca/__pycache__/__init__.cpython-311.pyc
 biblioteca/__pycache__/admin.cpython-311.pyc
 biblioteca/__pycache__/apps.cpython-311.pyc
